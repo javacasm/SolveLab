@@ -13,6 +13,8 @@ Podemos ver en una gráfica donde se ve que se puede usar todo el rango 0-1023
 ![1](./images/medidaSensorIR.png)
 
 Si tenemos luz ambiente, lo que necesitamos es calibrar el nivel de luz ambiental. En esta imagen he usado el monitor encendido para medir las distancias, con el mismo resultado de distancias, pero a partir del 600
+
+
 ![1](./images/medidaSensorIRconLuz.png)
 
 Podemos ver el rersultado con algo tan sencillo como este programa y el Serial Plotter
