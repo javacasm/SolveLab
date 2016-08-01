@@ -17,7 +17,7 @@ Si tenemos luz ambiente, lo que necesitamos es calibrar el nivel de luz ambienta
 
 ![1](./images/medidaSensorIRconLuz.png)
 
-Podemos ver el rersultado con algo tan sencillo como este programa y el Serial Plotter
+Podemos ver el resultado con algo tan sencillo como este programa y el Serial Plotter
 
     void setup() {
     Serial.begin(9600);
@@ -29,4 +29,38 @@ Podemos ver el rersultado con algo tan sencillo como este programa y el Serial P
 
     }
 
-Podemos complicarlo más  usando varios sensores y definiendo umbrales
+Podemos complicarlo más  usando varios sensores y definiendo umbrales.
+
+Vamos a comprobar la calidad de la medida haciendo una tabla de valores medidos
+
+Usaremos el siguiente sistema de medida
+
+![](./images/IMG_20160801_214750.jpg)
+
+Vemos los datos [(Enlace al fichero de datos)](./AjusteDatos.ods)
+
+|Distancia|	Lectura
+|---|---
+|1|	31
+|2|	292
+|2,5|	504
+|3|	653
+|4|	780
+|5|	849
+|6|	890
+|7|	914
+|8|	927
+|9|	939
+|10|	947
+|11|	952
+|12|	958
+|13|	961
+|14|	965
+|15|	967
+|16|	969
+
+Si dibujamos las curvas vemos que cláramente se puede decir que los datos son fiables.
+
+![curvas](./images/Curvas.png )
+
+Para resolver el tema, tendríamos que encontrar una aproximación a la curva distancia/lectura (siempre podemos aproximar por un conjunto de rectas)
