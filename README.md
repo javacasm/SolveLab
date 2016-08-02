@@ -59,8 +59,18 @@ Vemos los datos [(Enlace al fichero de datos)](./AjusteDatos.ods)
 |15|	967
 |16|	969
 
-Si dibujamos las curvas vemos que cláramente se puede decir que los datos son fiables.
+Si dibujamos las curvas vemos que cláramente se puede decir que los datos son fiables
 
 ![curvas](./images/Curvas.png )
 
 Para resolver el tema, tendríamos que encontrar una aproximación a la curva distancia/lectura (siempre podemos aproximar por un conjunto de rectas)
+
+Un aproximación nos da como función
+
+distancia=396,72*POTENCIA(1023-lectura;-0,83459)
+
+![Ajuste](./images/Ajuste.png)
+
+Vemos la aproximación junto a los datos medidos donde se han calculado también las cotas de error, siendo este bastante aceptable.
+
+Sólo queda implementarlo en Arduino y probarlo con algunos sensores más
